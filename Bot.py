@@ -25,9 +25,9 @@ import asyncio
 #---------------
 #
 #Change the save location var to the location of the text file in the folder this bot is in, example(C:/Users/Username/Desktop/Bot/data.txt)
-#Put your discord bot key in example(DISCORDKEY- aweu8237jewiuef8s)
-#Put your nasa api key in example(NASASPIKEY- aweu8237jewiuef8s)
-#Put your discord channel id in example(SPACECHANNEL- aweu8237jewiuef8s)
+#Put your discord bot key in example(DISCORDKEY- aweu8237jiuef8s)
+#Put your nasa api key in example(NASASPIKEY- aweu8237jiuef8s)
+#Put your discord channel id in example(SPACECHANNEL- aweu8237jiuef8s)
 #
 
 nasaKey = ""
