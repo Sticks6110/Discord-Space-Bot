@@ -14,6 +14,7 @@ import asyncio
 #
 #https://discord.com/developers/applications
 #https://api.nasa.gov/
+#Put that nasa api key in the nasaKey var, you put it in the actually script instead of the data file because it causes a error for some reason. I might find a fix in the future.
 #
 #Get your space channel id
 #-------------------------
@@ -26,7 +27,6 @@ import asyncio
 #
 #Change the save location var to the location of the text file in the folder this bot is in, example(C:/Users/Username/Desktop/Bot/data.txt)
 #Put your discord bot key in example(DISCORDKEY- aweu8237jiuef8s)
-#Put your nasa api key in example(NASASPIKEY- aweu8237jiuef8s)
 #Put your discord channel id in example(SPACECHANNEL- aweu8237jiuef8s)
 #
 
@@ -54,11 +54,6 @@ def load():
                 discordKey = lineUpdated
                 discordKeySet = 1
                 print("Discord Key Has Been Set")
-            if(line.find('NASASPIKEY- ' ) != -1):
-                lineUpdated = line.replace('NASASPIKEY- ', '')
-                global nasaKey
-                nasaKey = lineUpdated
-                print("Nasa Api Key Has Been Set")
             elif(line.find('SPACECHANNEL- ' ) != -1):
                 lineUpdated = line.replace('SPACECHANNEL- ', '')
                 global spaceChannel
@@ -83,7 +78,7 @@ async def Apod():
     image_desc = json_data['explanation']
     image_creator = json_data['copyright']
     
-    channel = client.get_channel(int(nasaKey))
+    channel = client.get_channel(int(spaceChannel))
 
     embeded = discord.Embed(title=image_name + "  |  " + datetime.today().strftime('%Y-%m-%d') + "  |  " + image_creator, description=image_desc, color=0xEE8700)
     embeded.set_thumbnail(url=image_url)
