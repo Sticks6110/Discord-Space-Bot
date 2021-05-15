@@ -30,7 +30,7 @@ import asyncio
 #Put your discord channel id in example(SPACECHANNEL- aweu8237jiuef8s)
 #
 
-nasaKey = ""
+nasaKey = "" #In case your wondering this is the variable to change
 apodUrl = 'https://api.nasa.gov/planetary/apod'
 
 spaceChannel = ""
@@ -41,7 +41,7 @@ discordKeySet = 0
 client = commands.Bot('.')
 debug_mode = 1
 
-saveLocation = 'C:/Users/Username/Desktop/Bot/data.txt' #In case your wondering this is the variable to change
+saveLocation = 'C:/Users/Username/Desktop/Bot/data.txt' #and this one
 
 def load():
     with open(saveLocation) as file:
