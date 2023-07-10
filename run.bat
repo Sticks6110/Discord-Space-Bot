@@ -1,5 +1,3 @@
-color 0C
-Title Discord Bot
-@echo off
-cls
-python Bot.py
+cd C:\Users\beast\Desktop\DiscordBot
+py main.py
+PAUSE
