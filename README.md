@@ -5,10 +5,10 @@ This bot will send a lot of different information collected from NASA websites a
 3: Open Nasa.py and replace APIKEY variable value with your NASA Api key.
 4: (IF YOU ARE ON WINDOWS) Open Run.bat and after cd put the directory to the folder you are in.
 
-#How To Make It Run Daily (Only On Windows)
+# How To Make It Run Daily (Only On Windows)
 https://www.youtube.com/watch?v=IsuAltPOiEw
 
-#Setup
+# Setup
 To setup you need a discord bot token. Nasa API Key. 
 
 #Assets
