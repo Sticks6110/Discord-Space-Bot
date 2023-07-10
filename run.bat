@@ -1,3 +1,3 @@
-cd C:\Users\beast\Desktop\DiscordBot
+cd
 py main.py
 PAUSE
